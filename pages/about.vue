@@ -3,11 +3,12 @@
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore voluptatem dicta, obcaecati possimus illum vel adipisci harum earum iure.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore voluptatem dicta, obcaecati possimus illum vel adipisci harum earum iure.</p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/kinako')
 </script>
 
 <style scoped>
