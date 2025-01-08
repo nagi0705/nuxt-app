@@ -1,8 +1,10 @@
-// @ts-ignore
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
-
+  runtimeConfig: {
+    currencyKey: process.env.CURRENCY_API_KEY
+  },
   app: {
     head: {
       title: 'Nuxt App',
@@ -13,7 +15,5 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
       ]
     }
-  },
-
-  compatibilityDate: '2025-01-08'
+  }
 })
