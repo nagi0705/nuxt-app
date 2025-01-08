@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-const { data } = await useFetch('/api/kinako')
+const { data } = await useFetch('/api/currency/GBP')
 </script>
 
 <style scoped>
