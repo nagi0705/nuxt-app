@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     currencyKey: process.env.CURRENCY_API_KEY
   },
   nitro: {
-    preset: 'vercel' // netlifyからvercelに変更
+    preset: 'netlify' // netlifyからvercelに変更
   },
   ssr: true, // SSRを有効化
   app: {
